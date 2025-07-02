@@ -8,6 +8,20 @@ const Hero = () => {
       <div className="container mx-auto px-6">
         <div className="text-center flex flex-col items-center">
 
+           {/* Profile Photo */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.1 }}
+            className="w-40 h-40 rounded-full overflow-hidden shadow-lg mb-6"
+          >
+            <img
+              src="profile photo.jpg"
+              alt="Sreshta Vadde"
+              className="w-full h-full object-cover"
+            />
+          </motion.div>
+          
           {/* Main Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -99,12 +113,7 @@ const Hero = () => {
           transition={{ delay: 1.5 }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         >
-          <
-            <img
-              src="profile photo.jpg"
-              alt="Sreshta Vadde"
-              className="w-full h-full object-cover"
-            />
+
             </motion.div>
           </a>
         </motion.div>
