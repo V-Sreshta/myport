@@ -45,7 +45,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 mb-8 justify-center"
           >
             <a
-              href="/resume.pdf"
+              href="Sreshta_s_CV.pdf"
               className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full hover:from-orange-600 hover:to-red-600 transition-all transform hover:scale-105 shadow-lg"
             >
               <Download className="mr-2" size={20} />
