@@ -112,7 +112,13 @@ const Hero = () => {
           transition={{ delay: 1.5 }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         >
-          
+          <a href="#profil" className="flex flex-col items-center text-gray-600 dark:text-gray-400 hover:text-orange-500 dark:hover:text-orange-400 transition-colors">
+            <span className="text-sm mb-2">Scroll down</span>
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            >
+              <ChevronDown size={24} />
             </motion.div>
           </a>
         </motion.div>
