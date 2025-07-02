@@ -7,8 +7,7 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 relative">
       <div className="container mx-auto px-6">
         <div className="text-center flex flex-col items-center">
-
-           {/* Profile Photo */}
+          {/* Profile Photo */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -16,12 +15,12 @@ const Hero = () => {
             className="w-40 h-40 rounded-full overflow-hidden shadow-lg mb-6"
           >
             <img
-              src="profile photo.jpg"
+              src="profile photo.jpg" // Replace this with your actual image path
               alt="Sreshta Vadde"
               className="w-full h-full object-cover"
             />
           </motion.div>
-          
+
           {/* Main Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -52,7 +51,7 @@ const Hero = () => {
             transition={{ delay: 0.6 }}
             className="text-gray-700 dark:text-gray-400 text-lg mb-8 max-w-3xl mx-auto"
           >
-            A passionate 3rd-year BTech student in Computer Science, focused on developing 
+            A passionate 3rd-year BTech student in Computer Science, focused on developing
             software applications and exploring new technologies to create real-world impact.
           </motion.p>
 
@@ -113,7 +112,16 @@ const Hero = () => {
           transition={{ delay: 1.5 }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         >
-
+          <a
+            href="#profil"
+            className="flex flex-col items-center text-gray-600 dark:text-gray-400 hover:text-orange-500 dark:hover:text-orange-400 transition-colors"
+          >
+            <span className="text-sm mb-2">Scroll down</span>
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            >
+              <ChevronDown size={24} />
             </motion.div>
           </a>
         </motion.div>
