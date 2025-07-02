@@ -102,7 +102,7 @@ const Hero = () => {
           <
             <img
               src="profile photo.jpg"
-              alt="Sreshta"
+              alt="Sreshta Vadde"
               className="w-full h-full object-cover"
             />
             </motion.div>
